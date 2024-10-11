@@ -61,6 +61,9 @@ export default function Home() {
               <VideoPlayer src={`/${batchIndex + 1}.mp4`} />
             </Suspense>
           )}
+           <Suspense fallback={<VideoLoader/>}>
+              <VideoPlayer src={`/5.mp4`} />
+            </Suspense>
         </div>
       ))}
     </div>
