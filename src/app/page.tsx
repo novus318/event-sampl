@@ -56,14 +56,11 @@ export default function Home() {
           </Suspense>
 
           {/* Render video between batches */}
-          {batchIndex < imageBatches.length - 1 && (
+          {batchIndex < imageBatches.length && (
             <Suspense fallback={<VideoLoader/>}>
               <VideoPlayer src={`/${batchIndex + 1}.mp4`} />
             </Suspense>
           )}
-           <Suspense fallback={<VideoLoader/>}>
-              <VideoPlayer src={`/5.mp4`} />
-            </Suspense>
         </div>
       ))}
     </div>
