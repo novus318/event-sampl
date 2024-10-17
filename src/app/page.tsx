@@ -19,6 +19,7 @@ export default function Home() {
   const imageBatches = [
     Array.from({ length: 19 }, (_, index) => index + 1),
     Array.from({ length: 8 }, (_, index) => 80 + index),
+    [94,95,96,],
     Array.from({ length: 34 }, (_, index) => index + 60),
     Array.from({ length: 20 }, (_, index) => index + 20),
     Array.from({ length: 20 }, (_, index) => index + 40),
